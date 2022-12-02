@@ -1,22 +1,18 @@
 import { solve as solveOne } from "./part1.ts";
-import { solve as solveTow } from "./part2.ts";
+import { solve as solveTwo } from "./part2.ts";
 
 function processData(input: string): number[][] {
   return input
-    .replace(/\n\n/g, ";")
-    .split(";")
+    .split("\n\n")
     .map((groupedInput) =>
-      groupedInput
-        .split("\n")
-        .map((a) => a.replace("\r", ""))
-        .map((value) => Number(value))
+      groupedInput.split("\n").map((value) => Number(value))
     );
 }
 
 export function solve(input: string, isPartTow = false) {
   const cleanInputs = processData(input);
   if (isPartTow) {
-    return solveTow(cleanInputs);
+    return solveTwo(cleanInputs);
   }
   return solveOne(cleanInputs);
 }
