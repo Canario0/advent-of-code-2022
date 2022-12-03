@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/day%20📅-3-blue)
-![](https://img.shields.io/badge/stars%20⭐-4-yellow)
-![](https://img.shields.io/badge/days%20completed-2-red)
+![](https://img.shields.io/badge/stars%20⭐-6-yellow)
+![](https://img.shields.io/badge/days%20completed-3-red)
 
 Repository of solutions for the [Advent of Code 2022][4] done by [Canario0][1]
 
