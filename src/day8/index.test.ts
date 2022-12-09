@@ -1,5 +1,5 @@
 import { solve } from "./index.ts";
-import { fileRead, readAll } from "../utils.ts";
+import { readAll } from "../utils.ts";
 import { assertEquals } from "https://deno.land/std@0.116.0/testing/asserts.ts";
 
 Deno.test({

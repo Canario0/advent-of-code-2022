@@ -10,14 +10,9 @@ function visible(i: number, j: number, board: number[][]) {
   for (let row = i + 1; row < board.length; row++) {
     treeBottomColumn.push(board[row][j]);
   }
-  if (
-    [treeRightRow, treeLeftRow, treeTopColumn, treeBottomColumn].some(
-      (values) => Math.max(...values) < tree
-    )
-  ) {
-    return true;
-  }
-  return false;
+  return [treeRightRow, treeLeftRow, treeTopColumn, treeBottomColumn].some(
+    (values) => Math.max(...values) < tree
+  );
 }
 export function solve(board: number[][]): number {
   let visibleCount = board.length * 2 + (board.length - 2) * 2;
